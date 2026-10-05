@@ -1,0 +1,13 @@
+{
+  "case_id": "CASE-0001",
+  "customer_id": "C12345",
+  "alert_reason": "Large incoming transfers quickly sent out (pass-through)",
+  "risk_score": 0.87,
+  "top_reasons_shap": ["pass_through_ratio", "fan_in_count", "amount_vs_history"],
+  "kyc_profile": {"type": "business", "industry": "Trading", "declared_turnover": 5000000},
+  "transactions": [
+    {"txn_id": "T1", "date": "2026-01-10", "amount": 900000, "direction": "in", "description": "Invoice payment"},
+    {"txn_id": "T2", "date": "2026-01-10", "amount": 880000, "direction": "out", "description": "Supplier transfer"}
+  ],
+  "evidence_ids": ["E1-transactions", "E2-kyc", "E3-network", "E4-shap"]
+}
