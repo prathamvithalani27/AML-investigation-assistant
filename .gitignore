@@ -1,0 +1,7 @@
+# dataset files are never uploaded
+*.zip
+*.parquet
+amlbench/
+data/
+__pycache__/
+.ipynb_checkpoints/
